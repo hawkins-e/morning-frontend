@@ -44,7 +44,7 @@ const HomepageHeading = ({ mobile }) => (
       }}
     />
     <Header
-      as='h2'
+      as='h4'
       content='Have a Fantastic Morning.'
       inverted
       style={{
@@ -53,6 +53,8 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
+    <br></br>
+    <br></br>
     <Dashboard/>
 
   </Container>

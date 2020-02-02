@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card"
+import DivvyCard from "./DivvyCard"
 
 const URL = "https://gbfs.divvybikes.com/gbfs/en/station_status.json";
 
@@ -40,7 +40,7 @@ class DivvyContainer extends React.Component {
     } else {    
       renderContent = (
         <div>
-          <Card getStation={this.getStation}/>
+          <DivvyCard getStation={this.getStation}/>
         </div>
       );
     }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Icon, Image } from 'semantic-ui-react'
 
-const CardExampleCard = (props) => (
+const DivvyCard = (props) => (
   <Card>
     <Image src= 'https://d21xlh2maitm24.cloudfront.net/chi/DivvyLogo_p_v2.svg?mtime=20170608140727' wrapped ui={false} />
     <Card.Content>
@@ -17,4 +17,4 @@ const CardExampleCard = (props) => (
   </Card>
 )
 
-export default CardExampleCard
+export default DivvyCard
