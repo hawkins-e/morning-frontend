@@ -1,4 +1,5 @@
 import React from "react"
+import CtaCard from "./CtaCard";
 
 const URL = 'http://lapi.transitchicago. com/api/1.0/ttarrivals.aspx?642632906178436fa3f103470c610444&max=1& mapid=40360&outputType=JSON'
 
@@ -7,7 +8,7 @@ class CtaContainer extends React.Component {
     super();
     this.state = {
       cta: [],
-      isLoading: true
+      isLoading: false
     };
   }
 
@@ -23,6 +24,8 @@ class CtaContainer extends React.Component {
       });
   }
 
+
+
   render() {
 
     // console.log("DEBUG RENDER", this.state.divvyStation)
@@ -32,8 +35,7 @@ class CtaContainer extends React.Component {
     } else {    
       renderContent = (
         <div>
-          <h1>Catch That CTA</h1>
-          <h3> My Train </h3>
+          <CtaCard/>
         </div>
       );
     }
