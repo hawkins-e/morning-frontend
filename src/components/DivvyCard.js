@@ -6,6 +6,7 @@ const DivvyCard = (props) => (
     <Image src= 'https://d21xlh2maitm24.cloudfront.net/chi/DivvyLogo_p_v2.svg?mtime=20170608140727' wrapped ui={false} />
     <Card.Content>
       <Card.Meta>
+        Station: Clark & Elm 
       </Card.Meta>
       <Card.Description>
       Bikes Available: {props.getStation('183').num_bikes_available}

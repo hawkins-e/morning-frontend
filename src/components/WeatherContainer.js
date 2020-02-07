@@ -1,9 +1,8 @@
 import React from "react";
 import WeatherCard from "./WeatherCard"
 
-// api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=a6e35c880dc001c17f77b139faa03bd8
+const URL = "http://api.openweathermap.org/data/2.5/weather?q=Chicago&APPID=a6e35c880dc001c17f77b139faa03bd8&units=imperial"
 
-const URL = 'api.openweathermap.org/data/2.5/weather?q=Chicago&APPID=a6e35c880dc001c17f77b139faa03bd8'
 
 class WeatherContainer extends React.Component {
   constructor() {
@@ -20,7 +19,11 @@ class WeatherContainer extends React.Component {
       .then(data => {
         console.log(data);
         this.setState({
-          maps: data,
+          weather: data,
+          city: data.name, 
+          temperature: data.main.temp, 
+          feels_like: data.main.feels_like,
+          humidity: data.main.humidity, 
           isLoading: false
         });
       });
@@ -35,7 +38,12 @@ class WeatherContainer extends React.Component {
       } else {    
         renderContent = (
           <div>
-            <WeatherCard/> 
+            <WeatherCard 
+            city={this.state.city}
+            temperature={this.state.temperature}
+            feels_like={this.state.feels_like}
+            humidity ={this.state.humidity}
+            /> 
           </div>
         );
       }
