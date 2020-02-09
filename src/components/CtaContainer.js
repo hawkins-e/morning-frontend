@@ -24,22 +24,23 @@ class CtaContainer extends React.Component {
           // destination: data.eta.stpDe,
           // route: data.eta.rt,
           // arrival_time: data.eta.arrT,
-          isLoading: false,
+          // isLoading: false,
         });
       });
   }
 
   getNextTrain = (run) => {
-    let train_data = this.state.cta
-    console.log({train_data})
-    // let myTrain = train_data.ctatt.eta[0].trDr
+    let train = this.state.cta
+    console.log({train})
+    // let myTrain = train.ctatt.eta.trDr
     // console.log(myTrain)  
-    return train_data?.ctatt?.eta?.find(train => train.rn === run)
-
-    
+    return train?.ctatt?.eta?.find(train => train.rn === run)
   }
 
-  
+  // getHp = stats => stats.filter(stat => stat.name === 'hp')[0].value
+
+  getRun = etas => etas.filter(eta => eta.rn === "815")[0].staNm
+
   render() {
     
     // console.log("DEBUG RENDER", this.state.divvyStation)
@@ -50,11 +51,13 @@ class CtaContainer extends React.Component {
       renderContent = (
         <div>
           <CtaCard
+          getRun={this.getRun}
           getNextTrain={this.getNextTrain}
-          // stop_name= {this.state.stop_name}
-          // destination = {this.state.destination}
-          // route = {this.state.route}
-          // arrival_time= {this.state.arrival_time}
+          cta = {this.state.cta}
+          stop_name= {this.state.stop_name}
+          destination = {this.state.destination}
+          route = {this.state.route}
+          arrival_time= {this.state.arrival_time}
           />
         </div>
       );
