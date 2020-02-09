@@ -84,7 +84,7 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em' }}
+            style={{ minHeight: 500, padding: '8em 0em' }}
             vertical
           >
 
