@@ -8,8 +8,8 @@ import WeatherContainer from "./WeatherContainer"
 class Dashboard extends React.Component {
     render(){
         return(
-        <Card.Group> 
-            <div class="ui centered cards">
+        <Card.Group itemsPerRow={3}> 
+            <div class="ui three centered cards">
                 
                 <Card>
                     <DivvyContainer
