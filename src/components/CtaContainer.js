@@ -1,9 +1,7 @@
 import React from "react"
 import CtaCard from "./CtaCard";
 
-// const URL = 'https://api.myjson.com/bins/brmqi'
-
-const URL = 'https://api.myjson.com/bins/1ddjn0'
+// const URL = 'http://ctabustracker.com/bustime/api/v2/getpredictions?key=JTDi73TetKb86BTRqBCaxLTDW&rt=70&stpid=2034&format=json'
 
 class CtaContainer extends React.Component {
   constructor() {
@@ -16,7 +14,7 @@ class CtaContainer extends React.Component {
   
 
   componentDidMount() {
-    fetch(URL)
+    fetch('/bustime/api/v2/getpredictions?key=JTDi73TetKb86BTRqBCaxLTDW&rt=70&stpid=2034&format=json')
       .then(response => response.json())
       .then(data => {
         console.log(data);
@@ -24,7 +22,7 @@ class CtaContainer extends React.Component {
           cta: data,
           station_name: data['bustime-response']['prd']['0']["stpnm"],
           eta: data['bustime-response']['prd']['0']['prdctdn'],
-          // second_eta: data['bustime-response']['prd']['1']['prdctdn'] 
+          second_eta: data['bustime-response']['prd']['1']['prdctdn'] 
         
         });
       });

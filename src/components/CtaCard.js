@@ -9,7 +9,9 @@ const CtaCard = (props) => (
         Bus Stop:{props.station_name}  
       </Card.Meta>
         <Card.Description>
-        ETA:{props.eta}  minutes
+        Next Bus in {props.eta}  minutes
+        <br></br>
+        2nd Bus: {props.second_eta} minutes 
         </Card.Description>
     </Card.Content>
   </Card>
