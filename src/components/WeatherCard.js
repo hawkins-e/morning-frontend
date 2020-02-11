@@ -9,14 +9,17 @@ const WeatherCard = (props) => (
       <Card.Meta>
       City: {props.city}
       </Card.Meta>
+      <br></br>
       <Card.Description>
-       Temperature:  {props.temperature}
+       <h4>Temperature:  {props.temperature}°</h4>
       </Card.Description>
+      <br></br>
       <Card.Description>
-       Feels Like:  {props.feels_like}
+       <h4>Feels Like:  {props.feels_like}°</h4>
       </Card.Description>
+      <br></br>
       <Card.Description>
-       Humidity:  {props.humidity}
+       <h4>Humidity:  {props.humidity}%</h4>
       </Card.Description>
     </Card.Content>
   </Card>
