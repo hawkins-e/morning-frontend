@@ -12,7 +12,6 @@ class CtaContainer extends React.Component {
     };
   }
   
-
   componentDidMount() {
     fetch('/bustime/api/v2/getpredictions?key=JTDi73TetKb86BTRqBCaxLTDW&rt=70&stpid=2034&format=json')
       .then(response => response.json())
@@ -22,23 +21,36 @@ class CtaContainer extends React.Component {
           cta: data,
           station_name: data['bustime-response']['prd']['0']["stpnm"],
           eta: data['bustime-response']['prd']['0']['prdctdn'],
-          second_eta: data['bustime-response']['prd']['1']['prdctdn'] 
-        
+          second_eta: data['bustime-response']['prd']['1']['prdctdn'],
         });
       });
   }
 
-  getNextTrain = (run) => {
-    let train = this.state.cta
-    console.log({train})
-    // let myTrain = train.ctatt.eta.trDr
-    // console.log(myTrain)  
-    return train?.ctatt?.eta?.find(train => train.rn === run)
-  }
+  // componentDidMount(){
+  //   let firstAPICall = fetch ('/bustime/api/v2/getpredictions?key=JTDi73TetKb86BTRqBCaxLTDW&rt=70&stpid=2034&format=json')
+  //   let secondAPICall = fetch ('/api/1.0/ttarrivals.aspx?key=642632906178436fa3f103470c610444&mapid=40630&outputType=JSON')
+
+  //   Promise.all( [firstAPICall, secondAPICall])
+  //     .then(values => Promise.all(values.map(value => value.json())))
+  //     .then(finalVals => {
+  //       let firstAPIResp = finalVals[0];
+  //       let secondAPIResp = finalVals[1]
+  //       console.log(firstAPIResp,secondAPIResp)
+  //     })
+
+  // }
+
+  // getNextTrain = (run) => {
+  //   let train = this.state.cta
+  //   console.log({train})
+  //   // let myTrain = train.ctatt.eta.trDr
+  //   // console.log(myTrain)  
+  //   return train?.ctatt?.eta?.find(train => train.rn === run)
+  // }
 
   // getHp = stats => stats.filter(stat => stat.name === 'hp')[0].value
 
-  getRun = etas => etas.filter(eta => eta.rn === "815")[0].staNm
+  // getRun = etas => etas.filter(eta => eta.rn === "815")[0].staNm
 
   render() {
     
@@ -50,8 +62,6 @@ class CtaContainer extends React.Component {
       renderContent = (
         <div>
           <CtaCard
-          // getRun={this.getRun}
-          // getNextTrain={this.getNextTrain}
           cta = {this.state.cta}
           eta = {this.state.eta}
           second_eta= {this.state.second_eta}

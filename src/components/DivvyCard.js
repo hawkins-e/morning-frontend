@@ -8,11 +8,16 @@ const DivvyCard = (props) => (
       <Card.Meta>
         Station: Clark & Elm 
       </Card.Meta>
-      <Card.Description>
-      Bikes Available: {props.getStation('183').num_bikes_available}
       <br></br>
-      Docks Available: {props.getStation('183').num_docks_available}
+      <Card.Description>
+      <h4>Bikes Available: {props.getStation('183').num_bikes_available}</h4>
+      <h4>Docks Available: {props.getStation('183').num_docks_available}</h4>
       </Card.Description>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </Card.Content>
   </Card>
 )
