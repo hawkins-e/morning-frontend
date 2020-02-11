@@ -1,7 +1,9 @@
 import React from "react"
 import CtaCard from "./CtaCard";
 
-const URL = 'https://api.myjson.com/bins/brmqi'
+// const URL = 'https://api.myjson.com/bins/brmqi'
+
+const URL = 'https://api.myjson.com/bins/1ddjn0'
 
 class CtaContainer extends React.Component {
   constructor() {
@@ -20,11 +22,10 @@ class CtaContainer extends React.Component {
         console.log(data);
         this.setState({
           cta: data,
-          // stop_name: data.eta,
-          // destination: data.eta.stpDe,
-          // route: data.eta.rt,
-          // arrival_time: data.eta.arrT,
-          // isLoading: false,
+          station_name: data['bustime-response']['prd']['0']["stpnm"],
+          eta: data['bustime-response']['prd']['0']['prdctdn'],
+          // second_eta: data['bustime-response']['prd']['1']['prdctdn'] 
+        
         });
       });
   }
@@ -43,7 +44,7 @@ class CtaContainer extends React.Component {
 
   render() {
     
-    // console.log("DEBUG RENDER", this.state.divvyStation)
+    console.log(this.state.prdctdn)
     let renderContent;
     if (this.state.isLoading) {
       renderContent = <div> Is Loading... </div>;   
@@ -51,13 +52,12 @@ class CtaContainer extends React.Component {
       renderContent = (
         <div>
           <CtaCard
-          getRun={this.getRun}
-          getNextTrain={this.getNextTrain}
+          // getRun={this.getRun}
+          // getNextTrain={this.getNextTrain}
           cta = {this.state.cta}
-          stop_name= {this.state.stop_name}
-          destination = {this.state.destination}
-          route = {this.state.route}
-          arrival_time= {this.state.arrival_time}
+          eta = {this.state.eta}
+          second_eta= {this.state.second_eta}
+          station_name = {this.state.station_name}
           />
         </div>
       );
