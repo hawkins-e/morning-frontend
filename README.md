@@ -6,6 +6,8 @@
 
 **Screenshots** 
 
+<img width="1265" alt="Screen Shot 2020-02-11 at 1 46 19 PM" src="https://user-images.githubusercontent.com/46728814/74277231-c5024d80-4cdc-11ea-9d1f-995ebf823d79.png">
+
 **Tech/Framework Used Built with:**
 
 -React
