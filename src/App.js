@@ -1,5 +1,4 @@
 import React from 'react';
-import Dashboard from './components/Dashboard'
 import HomepageLayout from './components/HomepageLayout'
 
 function App() {
