@@ -1,5 +1,4 @@
 {
-  "homepage": "https://hawkins-e.github.io/morning-frontend/",
   "name": "morning-front",
   "version": "0.1.0",
   "private": true,
@@ -18,8 +17,6 @@
     "semantic-ui-react": "^0.88.2"
   },
   "scripts": {
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
