@@ -1,3 +1,5 @@
+<a href="build/index.html" rel="nofollow" target="_blank">
+
 **MorningGo** is a dashboard that allows you to get your day off to a great start! Utilizing the Divvy API, Chicago Transit Authority API, and the OpenWeatherMap API, the program updates in realtime giving you live data for the stops that are most importatnt to you. 
 
 **Motivation**: I created this with my own mornings in mind. It can be hard enough to get out the door in the morning and I was constantly checking multiple apps on my phone wasting precious time. In order to put all the information that I cared most about in one place, I created MorningGo.
