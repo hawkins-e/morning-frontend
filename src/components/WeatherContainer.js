@@ -1,7 +1,7 @@
 import React from "react";
 import WeatherCard from "./WeatherCard"
 
-const URL = "http://api.openweathermap.org/data/2.5/weather?q=Chicago&APPID=a6e35c880dc001c17f77b139faa03bd8&units=imperial"
+const URL = "https://api.openweathermap.org/data/2.5/weather?q=Chicago&APPID=a6e35c880dc001c17f77b139faa03bd8&units=imperial"
 
 
 class WeatherContainer extends React.Component {
