@@ -1,19 +1,18 @@
 import React from 'react'
-import { Card,Image } from 'semantic-ui-react'
+import { Card,} from 'semantic-ui-react'
 
 const DivvyCard = (props) => (
   <Card>
-    <Image src= 'https://d21xlh2maitm24.cloudfront.net/chi/DivvyLogo_p_v2.svg?mtime=20170608140727' wrapped ui={false} />
-    <Card.Content>
+    <img  height={150} src= 'https://www.motivateco.com/wp-content/uploads/2017/08/DivvyLogo_p.png' wrapped ui={false} />
+    <Card.Content >
       <Card.Meta>
-        Station: Clark & Elm 
+        <h3> Station: Clark & Elm </h3>
       </Card.Meta>
       <br></br>
-      <Card.Description>
-      <h4>Bikes Available: {props.getStation('183').num_bikes_available}</h4>
-      <h4>Docks Available: {props.getStation('183').num_docks_available}</h4>
+      <Card.Description height={400}>
+      <h3>Bikes Available: {props.getStation('183').num_bikes_available}</h3>
+      <h3>Docks Available: {props.getStation('183').num_docks_available}</h3>
       </Card.Description>
-      <br></br>
       <br></br>
       <br></br>
       <br></br>
