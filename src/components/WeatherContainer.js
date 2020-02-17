@@ -21,7 +21,7 @@ class WeatherContainer extends React.Component {
         this.setState({
           weather: data,
           hows_it_look: data.weather["0"]['main'],
-          city: data.name, 
+          city: data.name,
           temperature: data.main.temp, 
           feels_like: data.main.feels_like,
           humidity: data.main.humidity, 
