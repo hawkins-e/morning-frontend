@@ -15,15 +15,15 @@ const WeatherCard = (props) => (
       </Card.Description>
       <br></br>
       <Card.Description>
-       <h3>Temperature:  {props.temperature}°</h3>
+       <h3>Temperature: {Math.round(props.temperature)}°</h3>
       </Card.Description>
       <br></br>
       <Card.Description>
-       <h3>Feels Like:  {props.feels_like}°</h3>
+       <h3>Feels Like:  {Math.round (props.feels_like)}°</h3>
       </Card.Description>
       <br></br>
       <Card.Description>
-       <h3>Humidity:  {props.humidity}%</h3>
+       <h3>Humidity:  {Math.round (props.humidity)}%</h3>
       </Card.Description>
     </Card.Content>
   </Card>
