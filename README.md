@@ -1,68 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="build/index.html" rel="nofollow" target="_blank">
 
-## Available Scripts
+**MorningGo** is a dashboard that allows you to get your day off to a great start! Utilizing the Divvy API, Chicago Transit Authority API, and the OpenWeatherMap API, the program updates in realtime giving you live data for the stops that are most importatnt to you. 
 
-In the project directory, you can run:
+**Motivation**: I created this with my own mornings in mind. It can be hard enough to get out the door in the morning and I was constantly checking multiple apps on my phone wasting precious time. In order to put all the information that I cared most about in one place, I created MorningGo.
 
-### `yarn start`
+**Code Style** js-standard-style
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Screenshots** 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<img width="1265" alt="Screen Shot 2020-02-11 at 1 46 19 PM" src="https://user-images.githubusercontent.com/46728814/74277231-c5024d80-4cdc-11ea-9d1f-995ebf823d79.png">
 
-### `yarn test`
+**Tech/Framework Used Built with:**
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-React
+-JavaScript 
+-Semantic UI 
+-Divvy API 
+-Chicago Transit Authority BusTracker API 
+-OpenWeatherMap API 
 
-### `yarn build`
+**How to Use?** 
+Website link coming soon! 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Improvements and Additions:** I would like to add Twilio functionality and when certain perameters are in effect, i.e. the weather is below 30° etc, I can receive a text stating this. 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#License MIT © Erica Hawkins
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
