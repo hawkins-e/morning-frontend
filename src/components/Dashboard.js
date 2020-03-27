@@ -10,19 +10,19 @@ class Dashboard extends React.Component {
         return(
         <Card.Group itemsPerRow={3}> 
             <div class="ui three centered cards">
-                
-                <Card>
+
+                 <Card color="green">
+                  <CtaContainer/>
+                </Card>
+            
+                <Card color="blue">
+                  <WeatherContainer/>
+                </Card> 
+
+                <Card color="orange">
                     <DivvyContainer
                     getStation={this.getStation}/>
                 </Card>
-
-                <Card>
-                  <CtaContainer/>
-                </Card>
-
-                <Card>
-                  <WeatherContainer/>
-                </Card> 
 
             </div>
         </Card.Group>
