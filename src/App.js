@@ -7,7 +7,7 @@ function App() {
   return (
     <Responsive className="App"
     style = {{
-    backgroundColor: "Black",
+    backgroundColor: "#ff5050",
     fontFamily: 'Bebas Neue, cursive',
     paddingTop: "100px",
     paddingRight: "80px",
