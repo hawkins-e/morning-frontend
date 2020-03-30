@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/morning-frontend/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/morning-frontend/static/js/main.3e85b697.chunk.js",
+    "main.js.map": "/morning-frontend/static/js/main.3e85b697.chunk.js.map",
+    "runtime-main.js": "/morning-frontend/static/js/runtime-main.87923580.js",
+    "runtime-main.js.map": "/morning-frontend/static/js/runtime-main.87923580.js.map",
+    "static/css/2.911c43b7.chunk.css": "/morning-frontend/static/css/2.911c43b7.chunk.css",
+    "static/js/2.5f8efd2e.chunk.js": "/morning-frontend/static/js/2.5f8efd2e.chunk.js",
+    "static/js/2.5f8efd2e.chunk.js.map": "/morning-frontend/static/js/2.5f8efd2e.chunk.js.map",
+    "index.html": "/morning-frontend/index.html",
+    "precache-manifest.3b08182706d25a4f0bccccce14fad016.js": "/morning-frontend/precache-manifest.3b08182706d25a4f0bccccce14fad016.js",
+    "service-worker.js": "/morning-frontend/service-worker.js",
+    "static/css/2.911c43b7.chunk.css.map": "/morning-frontend/static/css/2.911c43b7.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/morning-frontend/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.5f8efd2e.chunk.js.LICENSE.txt": "/morning-frontend/static/js/2.5f8efd2e.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/morning-frontend/static/media/outline-icons.ef60a4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.87923580.js",
+    "static/css/2.911c43b7.chunk.css",
+    "static/js/2.5f8efd2e.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.3e85b697.chunk.js"
+  ]
+}

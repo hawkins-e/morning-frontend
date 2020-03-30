@@ -20,7 +20,8 @@ class WeatherContainer extends React.Component {
         console.log(data);
         this.setState({
           weather: data,
-          city: data.name, 
+          hows_it_look: data.weather["0"]['main'],
+          city: data.name,
           temperature: data.main.temp, 
           feels_like: data.main.feels_like,
           humidity: data.main.humidity, 
@@ -40,6 +41,7 @@ class WeatherContainer extends React.Component {
           <div>
             <WeatherCard 
             city={this.state.city}
+            hows_it_look={this.state.hows_it_look}
             temperature={this.state.temperature}
             feels_like={this.state.feels_like}
             humidity ={this.state.humidity}
