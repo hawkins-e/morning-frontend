@@ -1,47 +1,42 @@
 import React from "react"
 import CtaCard from "./CtaCard";
 
-
 // let post = data.find((prd) => prd. === action.id)
 // let likeLen = post ? post.Likes.length : somethingYouWant
-
-
 
 class CtaContainer extends React.Component {
   constructor() {
     super();
     this.state = {
       cta: [],
-      isLoading: false
+      isLoading: true,
     };
   }
   
   componentDidMount() {
-    
-
     fetch('/bustime/api/v2/getpredictions?key=JTDi73TetKb86BTRqBCaxLTDW&rt=70&stpid=2034&format=json')
       .then(response => response.json())
       .then(data => {
-         console.log(data)
-
-          // this.setState({
-          //   cta: data,
-          //   station_name: data['bustime-response']['prd']['stpnm'],
-          //   eta:data['bustime-response']['prd']['0']['prdctdn'],
-          //   second_eta:data['bustime-response']['prd']['1']['prdctdn'] 
-          // })
-          
-        })
-      }  
-      
+       console.log(data);
+      //  this.setState({
+      //     cta: data,
+      //     isLoading: false,
+      //     // station_name: data['bustime-response']['prd']['stpnm'],
+      //     // eta:data['bustime-response']['prd']['0']['prdctdn'],
+      //     // second_eta:data['bustime-response']['prd']['1']['prdctdn'] 
+      //     station_name: data.bustime-response.prd
+      //   })
+        
+      })
+    }  
+    
       // }) else this.setState ({
       //         cta: data,
       //         station_name: data['bustime-response']['prd']['0']["stpnm"],
       //   })
+      // console.log(this.state.prdctdn)
   
   render() {
-    
-    // console.log(this.state.prdctdn)
     let renderContent;
     if (this.state.isLoading) {
       renderContent = <div> Is Loading... </div>;   

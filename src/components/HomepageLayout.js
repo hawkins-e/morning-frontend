@@ -4,7 +4,6 @@ import '../App.css'
 import {Grid} from 'semantic-ui-react'
 
 import {
-  Container,
   Header
 } from 'semantic-ui-react'
 
