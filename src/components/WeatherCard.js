@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'semantic-ui-react'
+import { Card, Image } from 'semantic-ui-react'
 
 const WeatherCard = (props) => (
   <div>

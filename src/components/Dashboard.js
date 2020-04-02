@@ -6,13 +6,13 @@ import WeatherContainer from "./WeatherContainer"
 
 
 class Dashboard extends React.Component {
-    state = {
-        message: "",
-        error: "", 
-        eee: "",
-        text: ""
+    // state = {
+    //     message: "",
+    //     error: "", 
+    //     eee: "",
+    //     text: ""
 
-    };
+    // };
 
     render(){
         return(
