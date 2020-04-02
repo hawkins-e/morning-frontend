@@ -2,15 +2,13 @@
   "name": "morning-front",
   "version": "0.1.0",
   "private": true,
-  "engines":{
-    "yarn": "1.22.4",
-    "node": "13.10.1"
-  },
+  "homepage": "https://git.heroku.com/morning-go.git",
   "dependencies": {
     "@babel/runtime": "^7.8.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "express": "^4.17.1",
     "http-proxy-middleware": "^0.20.0",
     "path": "^0.12.7",
     "react": "^16.12.0",
@@ -20,10 +18,13 @@
     "semantic-ui-react": "^0.88.2"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "NODE_ENV=production node",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "client": "react-scripts start",
+    "eject": "react-scripts eject",
+    "dev": "NODE_ENV=dev concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"

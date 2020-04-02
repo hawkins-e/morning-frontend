@@ -6,6 +6,14 @@ import WeatherContainer from "./WeatherContainer"
 
 
 class Dashboard extends React.Component {
+    state = {
+        message: "",
+        error: "", 
+        eee: "",
+        text: ""
+
+    };
+
     render(){
         return(
         <Card.Group itemsPerRow={3}> 
