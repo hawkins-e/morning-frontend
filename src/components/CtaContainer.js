@@ -20,9 +20,9 @@ class CtaContainer extends React.Component {
        this.setState({
           cta: data,
           isLoading: false,
-          station_name: data['bustime-response']['prd']['stpnm'],
-          eta: data['bustime-response']['prd']['0']['prdctdn'],
-          second_eta: data['bustime-response']['prd']['1']['prdctdn']
+          // station_name: data['bustime-response']['prd']['stpnm'],
+          // eta: data['bustime-response']['prd']['0']['prdctdn'],
+          // second_eta: data['bustime-response']['prd']['1']['prdctdn']
         });
         
       })
