@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Image } from 'semantic-ui-react'
+import { Card } from 'semantic-ui-react' 
 
 // 'https://www.transitchicago.com/assets/1/6/pageheader_ctatrademarks.png'
 
@@ -22,7 +22,6 @@ const CtaCard = (props) => (
         </Card.Description>
         <br></br>
         <br></br>
-        
     </Card.Content>
     </div>  
 )
