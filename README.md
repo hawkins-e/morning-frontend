@@ -16,12 +16,14 @@ Tech/Framework Used Built with:
 -React
 -JavaScript 
 -Semantic UI 
+-Google Fonts 
 -Divvy API 
 -Chicago Transit Authority BusTracker API 
 -OpenWeatherMap API 
+-Deployed with Heroku 
 
-How to Use?
-Website link coming soon! 
+Check it Out! 
+https://morning-go.herokuapp.com/
 
 **Improvements and Additions:** I would like to add Twilio functionality and when certain perameters are in effect, i.e. the weather is below 30° etc, I can receive a text stating this. 
 
