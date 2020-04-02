@@ -1,13 +1,13 @@
 import React from 'react'
 import { Card, Image } from 'semantic-ui-react' 
 
-// 'https://www.transitchicago.com/assets/1/6/pageheader_ctatrademarks.png'
+
 
 const CtaCard = (props) => (
 <div>
         <br></br>
       
-    <Image src='https://www.transitchicago.com/assets/1/6/pageheader_ctatrademarks.png' paddingTop="10px" fluid />
+    <Image src='https://www.transitchicago.com/assets/1/6/pageheader_ctatrademarks.png' paddingtop="10px" fluid />
         <br></br>
         <br></br>
     <Card.Content>

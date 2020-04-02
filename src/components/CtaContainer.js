@@ -20,19 +20,14 @@ class CtaContainer extends React.Component {
        this.setState({
           cta: data,
           isLoading: false,
-          // station_name: data['bustime-response']['prd']['stpnm'],
-          // eta: data['bustime-response']['prd']['0']['prdctdn'],
-          // second_eta: data['bustime-response']['prd']['1']['prdctdn']
+          station_name: data['bustime-response']['prd']['0']['stpnm']|| "Unknown",
+          eta: data['bustime-response']['prd']['0']['prdctdn'] || "Unknown",
+          second_eta: data['bustime-response']['prd']['1']['prdctdn'] || "Unknown"
         });
         
       })
   } 
     
-    // getStation = (stationName) => {
-    //   let station_name = this.state.data;
-
-    //   return station_name?.data?.bustime-response?.prd?.stpnm.find(station => stationname.stationName)
-    // }
   
   render() {
     let renderContent;
@@ -55,35 +50,4 @@ class CtaContainer extends React.Component {
   }
 }
 
-// componentDidMount(){
-  // this.setState({
-  //   cta: data,
-  //   station_name: data['bustime-response']['prd']['0']["stpnm"],
-  //   eta: data['bustime-response']['prd']['0']['prdctdn'], 
-  //   second_eta: 
-  // });
-//   let firstAPICall = fetch ('/bustime/api/v2/getpredictions?key=JTDi73TetKb86BTRqBCaxLTDW&rt=70&stpid=2034&format=json')
-//   let secondAPICall = fetch ('/api/1.0/ttarrivals.aspx?key=642632906178436fa3f103470c610444&mapid=40630&outputType=JSON')
-
-//   Promise.all( [firstAPICall, secondAPICall])
-//     .then(values => Promise.all(values.map(value => value.json())))
-//     .then(finalVals => {
-//       let firstAPIResp = finalVals[0];
-//       let secondAPIResp = finalVals[1]
-//       console.log(firstAPIResp,secondAPIResp)
-//     })
-
-// }
-
-// getNextTrain = (run) => {
-//   let train = this.state.cta
-//   console.log({train})
-//   // let myTrain = train.ctatt.eta.trDr
-//   // console.log(myTrain)  
-//   return train?.ctatt?.eta?.find(train => train.rn === run)
-// }
-
-// getHp = stats => stats.filter(stat => stat.name === 'hp')[0].value
-
-// getRun = etas => etas.filter(eta => eta.rn === "815")[0].staNm
 export default CtaContainer 
