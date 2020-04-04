@@ -8,19 +8,22 @@ Code Style js-standard-style
 
 Screenshots
 
-<img width="1265" alt="Screen Shot 2020-02-11 at 1 46 19 PM" src="https://user-images.githubusercontent.com/46728814/74277231-c5024d80-4cdc-11ea-9d1f-995ebf823d79.png">
+<img width="640" alt="Screen Shot 2020-04-02 at 4 27 01 PM" src="https://user-images.githubusercontent.com/46728814/78302288-1d491500-7500-11ea-98fd-dde3af613da3.png">
+
 
 Tech/Framework Used Built with:
 
 -React
 -JavaScript 
 -Semantic UI 
+-Google Fonts 
 -Divvy API 
 -Chicago Transit Authority BusTracker API 
 -OpenWeatherMap API 
+-Deployed with Heroku 
 
-How to Use?
-Website link coming soon! 
+Check it Out! 
+https://morning-go.herokuapp.com/
 
 **Improvements and Additions:** I would like to add Twilio functionality and when certain perameters are in effect, i.e. the weather is below 30° etc, I can receive a text stating this. 
 
